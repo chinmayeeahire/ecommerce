@@ -1,5 +1,7 @@
 import { styled } from "styled-components"
 import {Facebook, Instagram, Twitter, Pinterest,MailOutline,Room,Phone } from "@mui/icons-material";
+import {mobile} from '../responsive';
+
 
 const Container=styled.div`
    display: flex;
@@ -56,7 +58,9 @@ const ListItem=styled.li`
 const Center=styled.div`
    flex:1;
    padding: 20px;
+   ${mobile({display: "none"})};
 `;
+
 
 const Right=styled.div`
    flex:1;
