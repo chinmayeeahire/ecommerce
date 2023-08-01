@@ -5,6 +5,7 @@ import {mobile} from '../responsive';
 
 const Container=styled.div`
    display: flex;
+   ${mobile({flexDirection: "column"})};
 `;
 
 const Left=styled.div`
@@ -64,6 +65,7 @@ const Center=styled.div`
 
 const Right=styled.div`
    flex:1;
+   ${mobile({backgroundColor: "#fff8f8"})};
 `;
 
 const ContactItem=styled.div`
